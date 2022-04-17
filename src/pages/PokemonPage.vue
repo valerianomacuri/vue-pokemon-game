@@ -14,7 +14,9 @@
     <p>
       {{ message }}
     </p>
-    <button @click="newGame">NUEVO JUEGO</button>
+    <button v-if="message" @click="newGame">
+      NUEVO JUEGO
+    </button>
   </template>
   <!-- TODO: Opciones -->
 </template>
